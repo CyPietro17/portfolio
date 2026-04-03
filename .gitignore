@@ -1,0 +1,28 @@
+HELP.md
+
+### env Files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+### Node
+node_modules/
+
+### Build
+dist/
+build/
+
+### Logs
+logs/
+*.log
+
+### IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+### Other
+.claude/
