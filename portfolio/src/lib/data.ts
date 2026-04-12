@@ -34,15 +34,15 @@ export const portfolioData = {
   role: "Software Developer",
   bio: "Specializzato nello sviluppo backend con Java e Spring Framework e automazione dei test, con forte attenzione alla qualità del codice, abituato a lavorare in team Agile/Scrum",
   skills: [
-    { category: "Linguaggi", items: ["Java", "C#", "TypeScript", "Python", "SQL", "Shell Script"] },
-    { category: "Framework & Tools", items: ["Spring Framework", "Robot Framework", "Angular", "Jenkins", "Cucumber/Gherkin", "JBoss"] },
-    { category: "Metodologie", items: ["Agile/Scrum", "CI/CD", "TDD"] },
+    { category: "Linguaggi", items: ["Java", "TypeScript", "Javascript", "Python", "C#", "SQL", "Shell Script"] },
+    { category: "Framework & Tools", items: ["Spring Framework", "Maven", "Hibernate", "JUnit", "Docker", "Git", "Svn", "Robot Framework", "Angular", "NPM","Jenkins", "Jira", "Cucumber", "JBoss"] },
+    { category: "Metodologie", items: ["Agile/Scrum", "CI/CD", "TDD", "BDD"] },
   ],
   experience: [
     {
-      company: "I.T.Svil srl",
+      company: "I.T.Svil srl Consulente per Wolters Kluwer",
       role: "Software Developer",
-      period: "Marzo 2023 – Presente",
+      period: "Marzo 2023 - Presente",
       description: [
         "Sviluppo e manutenzione su CCH Tagetik",
         "Backend Java/Spring Framework",

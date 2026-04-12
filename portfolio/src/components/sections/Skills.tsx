@@ -7,18 +7,34 @@ import { cn } from "@/lib/utils"
 
 // SimpleIcons CDN slug for each skill (https://cdn.simpleicons.org/{slug})
 const SKILL_ICONS: Record<string, string> = {
+  // Linguaggi
   "Java":              "logos:java",
   "C#":                "logos:c-sharp",
   "TypeScript":        "logos:typescript-icon",
+  "Javascript":        "logos:javascript",
   "Python":            "logos:python",
+  "SQL":               "devicon:sqldeveloper",
   "Shell Script":      "logos:bash-icon",
+  // Framework & Tools
   "Spring Framework":  "logos:spring-icon",
+  "Maven":             "devicon:maven",
+  "Hibernate":         "devicon:hibernate",
+  "JUnit":             "devicon:junit",
+  "Docker":            "logos:docker-icon",
+  "Git":               "logos:git-icon",
+  "Svn":               "simple-icons:subversion",
   "Robot Framework":   "simple-icons:robotframework",
   "Angular":           "logos:angular-icon",
+  "NPM":               "logos:npm",
   "Jenkins":           "logos:jenkins",
-  "Cucumber/Gherkin":  "logos:cucumber",
-  "JBoss":             "simple-icons:redhat",
-  "SQL":               "devicon:sqldeveloper",
+  "Cucumber":          "logos:cucumber",
+  "JBoss":             "devicon:redhat",
+  "Jira":              "logos:jira",
+  // Metodologie
+  "Agile/Scrum":       "material-symbols:sprint",
+  "CI/CD":             "carbon:continuous-deployment",
+  "TDD":               "carbon:test-tool",
+  "BDD":               "carbon:development"
 }
 
 // Per-category visual config: accent border color + badge style
