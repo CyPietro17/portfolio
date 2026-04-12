@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn(geistSans.variable, geistMono.variable)}>
       <body
-        className="antialiased"
+        className="antialiased vsc-initialized"
       >
         {children}
       </body>

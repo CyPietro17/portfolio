@@ -29,13 +29,13 @@ export interface Contact {
 }
 
 export const portfolioData = {
-  name: "Pietro Salvatore",
+  name: "Pietro Salvatore, BEng",
   role: "Software Developer",
   bio: "Specializzato nello sviluppo backend con Java e Spring Framework e automazione dei test, con forte attenzione alla qualità del codice, abituato a lavorare in team Agile/Scrum",
   skills: [
     { category: "Linguaggi", items: ["Java", "C#", "TypeScript", "Python", "SQL", "Shell Script"] },
-    { category: "Framework", items: ["Spring Framework", "Robot Framework", "Angular"] },
-    { category: "Tools", items: ["Git", "SVN", "Jenkins", "Cucumber", "Gherkin", "JBoss"] },
+    { category: "Framework & Tools", items: ["Spring Framework", "Robot Framework", "Angular", "Jenkins", "Cucumber/Gherkin", "JBoss"] },
+    { category: "Metodologie", items: ["Agile/Scrum", "CI/CD", "TDD"] },
   ],
   experience: [
     {
