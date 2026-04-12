@@ -35,7 +35,7 @@ export const portfolioData = {
   bio: "Specializzato nello sviluppo backend con Java e Spring Framework e automazione dei test, con forte attenzione alla qualità del codice, abituato a lavorare in team Agile/Scrum",
   skills: [
     { category: "Linguaggi", items: ["Java", "TypeScript", "Javascript", "Python", "C#", "SQL", "Shell Script"] },
-    { category: "Framework & Tools", items: ["Spring Framework", "Maven", "Hibernate", "JUnit", "Docker", "Git", "Svn", "Robot Framework", "Angular", "NPM","Jenkins", "Jira", "Cucumber", "JBoss"] },
+    { category: "Framework & Tools", items: ["Spring Framework", "Maven", "Hibernate", "JUnit", "Docker", "Git", "Svn", "Robot Framework", "Angular", "NPM","Jenkins", "Jira", "Cucumber", "Swagger", "JBoss"] },
     { category: "Metodologie", items: ["Agile/Scrum", "CI/CD", "TDD", "BDD"] },
   ],
   experience: [

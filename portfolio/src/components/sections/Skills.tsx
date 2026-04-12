@@ -27,9 +27,10 @@ const SKILL_ICONS: Record<string, string> = {
   "Angular":           "logos:angular-icon",
   "NPM":               "logos:npm",
   "Jenkins":           "logos:jenkins",
-  "Cucumber":          "logos:cucumber",
-  "JBoss":             "devicon:redhat",
   "Jira":              "logos:jira",
+  "Cucumber":          "logos:cucumber",
+  "Swagger":           "devicon:swagger",
+  "JBoss":             "devicon:redhat",
   // Metodologie
   "Agile/Scrum":       "material-symbols:sprint",
   "CI/CD":             "carbon:continuous-deployment",
