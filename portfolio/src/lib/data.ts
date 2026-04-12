@@ -14,6 +14,7 @@ export interface Education {
   degree: string
   institution: string
   period: string
+  courses?: readonly string[]
 }
 
 export interface Project {
@@ -46,6 +47,7 @@ export const portfolioData = {
         "Sviluppo e manutenzione su CCH Tagetik",
         "Backend Java/Spring Framework",
         "C# Excel Add-in",
+        "Automazione test con Robot Framework",
         "Metodologia Agile/Scrum",
       ],
     },
@@ -55,6 +57,14 @@ export const portfolioData = {
       degree: "Laurea Triennale in Ingegneria Informatica",
       institution: "Universitas Mercatorum",
       period: "2021 – 2024",
+      courses: [
+        "Ingegneria del Software",
+        "Basi di Dati",
+        "Reti di Calcolatori",
+        "Sistemi Operativi",
+        "Algoritmi e Strutture Dati",
+        "Programmazione in C",
+      ],
     },
   ],
   projects: [

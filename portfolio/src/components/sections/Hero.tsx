@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, type Variants } from "framer-motion"
+
 function GithubIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -164,7 +165,7 @@ export default function Hero() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background via-background to-muted/30"
+        className="pointer-events-none absolute inset-0 bg-linear-to-b from-background via-background to-muted/30"
       />
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 py-24 text-center">
@@ -176,7 +177,7 @@ export default function Hero() {
           {/* Name */}
           <motion.h1
             variants={itemVariants}
-            className="font-[family-name:var(--font-geist-mono)] text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight"
+            className="font-(family-name:--font-geist-mono) text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight"
           >
             {portfolioData.name}
           </motion.h1>
@@ -186,13 +187,13 @@ export default function Hero() {
             variants={itemVariants}
             className="mt-4 flex h-8 items-center justify-center"
           >
-            <span className="font-[family-name:var(--font-geist-mono)] text-xl sm:text-2xl text-muted-foreground">
+            <span className="font-(family-name:--font-geist-mono) text-xl sm:text-2xl text-muted-foreground">
               {displayText}
             </span>
             <span
               aria-hidden
               className={cn(
-                "ml-0.5 inline-block h-[1.2em] w-[2px] align-middle bg-muted-foreground",
+                "ml-0.5 inline-block h-[1.2em] w-0.5 align-middle bg-muted-foreground",
                 isPausing ? "animate-pulse" : ""
               )}
             />

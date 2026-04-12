@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { motion, type Variants } from "framer-motion"
 import { portfolioData } from "@/lib/data"
 import { cn } from "@/lib/utils"
@@ -17,7 +18,7 @@ const SKILL_ICONS: Record<string, string> = {
   "Jenkins":           "logos:jenkins",
   "Cucumber/Gherkin":  "logos:cucumber",
   "JBoss":             "simple-icons:redhat",
-  "SQL":               "ldevicon:sqldeveloper",
+  "SQL":               "devicon:sqldeveloper",
 }
 
 // Per-category visual config: accent border color + badge style
@@ -86,7 +87,7 @@ export default function Skills() {
           variants={headingVariants}
           className="mb-12 text-center"
         >
-          <h2 className="font-[family-name:var(--font-geist-sans)] text-3xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="font-(family-name:--font-geist-sans) text-3xl sm:text-4xl font-bold tracking-tight">
             Competenze
           </h2>
           <p className="mt-3 text-muted-foreground">
@@ -115,7 +116,7 @@ export default function Skills() {
                 {/* Category title */}
                 <h3
                   className={cn(
-                    "font-[family-name:var(--font-geist-mono)] text-sm font-semibold uppercase tracking-widest mb-5",
+                    "font-(family-name:--font-geist-mono) text-sm font-semibold uppercase tracking-widest mb-5",
                     config.labelClass
                   )}
                 >
@@ -142,7 +143,7 @@ export default function Skills() {
                         )}
                       >
                         {slug && (
-                          <img
+                          <Image
                             src={`https://api.iconify.design/${slug}.svg`}
                             alt=""
                             aria-hidden
@@ -151,7 +152,7 @@ export default function Skills() {
                             className={cn(
                               "shrink-0",
                               // Invert icons in dark-bg badges so they're readable
-                              //i === 0 ? "brightness-0 invert" : ""
+                              // i === 0 ? "brightness-0 invert" : ""
                             )}
                           />
                         )}
