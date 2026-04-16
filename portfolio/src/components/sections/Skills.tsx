@@ -2,41 +2,8 @@
 
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
-import { portfolioData } from "@/lib/data";
+import { portfolioData, TECH_ICONS } from "@/lib/data";
 import { cn } from "@/lib/utils";
-
-// SimpleIcons CDN slug for each skill (https://cdn.simpleicons.org/{slug})
-const SKILL_ICONS: Record<string, string> = {
-  // Linguaggi
-  "Java":              "logos:java",
-  "C#":                "logos:c-sharp",
-  "TypeScript":        "logos:typescript-icon",
-  "Javascript":        "logos:javascript",
-  "Python":            "logos:python",
-  "SQL":               "devicon:sqldeveloper",
-  "Shell Script":      "logos:bash-icon",
-  // Framework & Tools
-  "Spring Framework":  "logos:spring-icon",
-  "Maven":             "devicon:maven",
-  "Hibernate":         "devicon:hibernate",
-  "JUnit":             "devicon:junit",
-  "Docker":            "logos:docker-icon",
-  "Git":               "logos:git-icon",
-  "Svn":               "simple-icons:subversion",
-  "Robot Framework":   "simple-icons:robotframework",
-  "Angular":           "logos:angular-icon",
-  "NPM":               "logos:npm",
-  "Jenkins":           "logos:jenkins",
-  "Jira":              "logos:jira",
-  "Cucumber":          "logos:cucumber",
-  "Swagger":           "devicon:swagger",
-  "JBoss":             "devicon:redhat",
-  // Metodologie
-  "Agile/Scrum":       "material-symbols:sprint",
-  "CI/CD":             "carbon:continuous-deployment",
-  "TDD":               "carbon:test-tool",
-  "BDD":               "carbon:development"
-}
 
 // Per-category visual config: accent border color + badge style
 const CATEGORY_CONFIG = [
@@ -147,7 +114,7 @@ export default function Skills() {
                   className="flex flex-wrap gap-2"
                 >
                   {category.items.map((item) => {
-                    const slug = SKILL_ICONS[item];
+                    const slug = TECH_ICONS[item];
                     return (
                       <motion.span
                         key={item}

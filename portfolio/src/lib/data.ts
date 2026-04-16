@@ -23,11 +23,13 @@ export interface Project {
   description: string;
   tech: string[];
   links: { label: string; url: string }[];
+  //screenshot?: string;
 }
 
 export interface Contact {
   email: string;
   linkedin: string;
+  whatsapp: string;
 }
 
 export const portfolioData = {
@@ -117,20 +119,25 @@ export const portfolioData = {
   projects: [
     {
       name: "MediCuore",
-      description: "Gestionale per clinica privata",
-      tech: ["Java", "Spring", "SQL", "MyBatis", "Angular"],
+      description:
+        "Applicazione gestionale per clinica privata - gestione pazienti e operatori",
+      tech: ["Java", "Spring Framework", "SQL", "Angular", "TypeScript"],
       links: [
         {
-          label: "Backend",
+          label: "Backend GitHub",
           url: "https://github.com/CyPietro17/Meduicuore-api",
         },
-        { label: "Frontend", url: "https://github.com/CyPietro17/MediCuore" },
+        {
+          label: "Frontend GitHub",
+          url: "https://github.com/CyPietro17/MediCuore",
+        },
       ],
     },
   ],
   contact: {
     email: "pietro.salvatore95@protonmail.com",
     linkedin: "https://www.linkedin.com/in/pietro-salvatore-a94ab4243/",
+    whatsapp: "393891234567",
   },
 } as const satisfies {
   name: string;
@@ -141,4 +148,37 @@ export const portfolioData = {
   education: Education[];
   projects: Project[];
   contact: Contact;
+};
+
+// SimpleIcons CDN slug for each skill (https://cdn.simpleicons.org/{slug})
+export const TECH_ICONS: Record<string, string> = {
+  // Linguaggi
+  Java: "logos:java",
+  "C#": "logos:c-sharp",
+  TypeScript: "logos:typescript-icon",
+  Javascript: "logos:javascript",
+  Python: "logos:python",
+  SQL: "devicon:sqldeveloper",
+  "Shell Script": "logos:bash-icon",
+  // Framework & Tools
+  "Spring Framework": "logos:spring-icon",
+  Maven: "devicon:maven",
+  Hibernate: "devicon:hibernate",
+  JUnit: "devicon:junit",
+  Docker: "logos:docker-icon",
+  Git: "logos:git-icon",
+  Svn: "simple-icons:subversion",
+  "Robot Framework": "simple-icons:robotframework",
+  Angular: "logos:angular-icon",
+  NPM: "logos:npm",
+  Jenkins: "logos:jenkins",
+  Jira: "logos:jira",
+  Cucumber: "logos:cucumber",
+  Swagger: "devicon:swagger",
+  JBoss: "devicon:redhat",
+  // Metodologie
+  "Agile/Scrum": "material-symbols:sprint",
+  "CI/CD": "carbon:continuous-deployment",
+  TDD: "carbon:test-tool",
+  BDD: "carbon:development",
 };
