@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion, type Variants } from "framer-motion"
-import { portfolioData } from "@/lib/data"
-import { cn } from "@/lib/utils"
+import Image from "next/image";
+import { motion, type Variants } from "framer-motion";
+import { portfolioData } from "@/lib/data";
+import { cn } from "@/lib/utils";
 
 // SimpleIcons CDN slug for each skill (https://cdn.simpleicons.org/{slug})
 const SKILL_ICONS: Record<string, string> = {
@@ -42,8 +42,7 @@ const SKILL_ICONS: Record<string, string> = {
 const CATEGORY_CONFIG = [
   {
     accent: "border-l-foreground",
-    badgeClass:
-      "bg-foreground text-background border border-transparent",
+    badgeClass: "bg-foreground text-background border border-transparent",
     labelClass: "text-foreground",
   },
   {
@@ -54,11 +53,10 @@ const CATEGORY_CONFIG = [
   },
   {
     accent: "border-l-muted-foreground/25",
-    badgeClass:
-      "bg-muted text-muted-foreground border border-transparent",
+    badgeClass: "bg-muted text-muted-foreground border border-transparent",
     labelClass: "text-muted-foreground",
   },
-] as const
+] as const;
 
 const headingVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -67,7 +65,7 @@ const headingVariants: Variants = {
     y: 0,
     transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
   },
-}
+};
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 28 },
@@ -76,12 +74,12 @@ const cardVariants: Variants = {
     y: 0,
     transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
   },
-}
+};
 
 const badgeContainerVariants: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.055, delayChildren: 0.1 } },
-}
+};
 
 const badgeVariants: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -90,7 +88,7 @@ const badgeVariants: Variants = {
     scale: 1,
     transition: { duration: 0.28, ease: [0.22, 1, 0.36, 1] },
   },
-}
+};
 
 export default function Skills() {
   return (
@@ -115,7 +113,7 @@ export default function Skills() {
         {/* Category grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {portfolioData.skills.map((category, i) => {
-            const config = CATEGORY_CONFIG[i] ?? CATEGORY_CONFIG[0]
+            const config = CATEGORY_CONFIG[0]; /*?? CATEGORY_CONFIG[0]*/
             return (
               <motion.div
                 key={category.category}
@@ -127,14 +125,14 @@ export default function Skills() {
                 className={cn(
                   "rounded-xl bg-card ring-1 ring-foreground/10 p-6",
                   "border-l-4",
-                  config.accent
+                  config.accent,
                 )}
               >
                 {/* Category title */}
                 <h3
                   className={cn(
                     "font-(family-name:--font-geist-mono) text-sm font-semibold uppercase tracking-widest mb-5",
-                    config.labelClass
+                    config.labelClass,
                   )}
                 >
                   {category.category}
@@ -149,20 +147,20 @@ export default function Skills() {
                   className="flex flex-wrap gap-2"
                 >
                   {category.items.map((item) => {
-                    const slug = SKILL_ICONS[item]
+                    const slug = SKILL_ICONS[item];
                     return (
                       <motion.span
                         key={item}
                         variants={badgeVariants}
                         className={cn(
                           "inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium transition-colors",
-                          config.badgeClass
+                          config.badgeClass,
                         )}
                       >
                         {slug && (
                           <Image
                             src={`https://api.iconify.design/${slug}.svg`}
-                            alt=""
+                            alt={`${item}`}
                             aria-hidden
                             width={14}
                             height={14}
@@ -175,14 +173,14 @@ export default function Skills() {
                         )}
                         {item}
                       </motion.span>
-                    )
+                    );
                   })}
                 </motion.div>
               </motion.div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -43,10 +43,19 @@
 @layer base {
   :root {
     scroll-behavior: smooth;
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
+    --background: oklch(0.29 0.02 277.54);
+  /*  --background: oklch(0.147 0.034 240);*/     /*Dark Blue*/
+  /*  --background: oklch(0.228 0.038 282.9);*/   /*Deep Navy*/
+  /*  --background: oklch(0.178 0.013 270.6);*/   /*Midnight Black*/
+  /*  --background: oklch(0.176 0.014 258.4);*/   /*Github Dark*/
+  /*  --background: oklch(0.216 0.006 56.0);*/    /*Warm Obsidian*/
+  /*  --background: oklch(0.186 0.022 292.4);*/   /*Dark Indigo*/
+  /*  --foreground: oklch(96.42% 0.000 0);*/
+    --foreground: oklch(0.850 0 0);
+  /*  --card: oklch(0.29 0.02 277.54);*/
+  /*  --card: oklch(0.147 0.034 240);*/
+    --card: oklch(0.439 0 0);
+    --card-foreground: oklch(1 0 0);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
     --primary: oklch(0.205 0 0);
@@ -54,7 +63,7 @@
     --secondary: oklch(0.97 0 0);
     --secondary-foreground: oklch(0.205 0 0);
     --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
+    --muted-foreground: oklch(0.97 0 0);
     --accent: oklch(0.97 0 0);
     --accent-foreground: oklch(0.205 0 0);
     --destructive: oklch(0.577 0.245 27.325);
