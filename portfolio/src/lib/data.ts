@@ -137,7 +137,7 @@ export const portfolioData = {
   contact: {
     email: "pietro.salvatore95@protonmail.com",
     linkedin: "https://www.linkedin.com/in/pietro-salvatore-a94ab4243/",
-    whatsapp: "393891234567",
+    whatsapp: "393894361538",
   },
 } as const satisfies {
   name: string;
