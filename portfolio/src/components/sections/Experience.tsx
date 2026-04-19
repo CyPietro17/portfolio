@@ -2,9 +2,15 @@
 
 import { useRef } from "react";
 import { motion, useInView, type Variants } from "framer-motion";
-import { portfolioData, type Experience, type Education } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import {
+  EXPERIENCE_ICONS,
+  portfolioData,
+  type Experience,
+  type Education,
+} from "@/lib/data";
 import {
   Card,
   CardContent,
@@ -12,7 +18,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 
 // ── Discriminated union ──────────────────────────────────────────────────────
 
@@ -24,12 +29,6 @@ const TIMELINE_ENTRIES: TimelineEntry[] = [
   ...portfolioData.experience.map((e) => ({ kind: "work" as const, ...e })),
   ...portfolioData.education.map((e) => ({ kind: "education" as const, ...e })),
 ];
-
-const EXPERIENCE_ICONS: Record<string, string[]> = {
-  "I.T.Svil":               ["https://www.itsvil.it/assets/images/logo-itsvil-2022-r2.svg",/*"https://www.itsvil.it/assets/images/logo-itsvil-2026-white.png-419x139.png",*/ "https://www.itsvil.it/"],
-  "Wolters Kluwer":         ["https://cdn.wolterskluwer.io/wk/fundamentals/1.x.x/logo/assets/white-medium.svg",/*"https://cdn.wolterskluwer.io/wk/jumpstart-v3-assets/0.x.x/logo/large.svg",*/ "https://www.wolterskluwer.com/it-it"],
-  "Universitas Mercatorum": ["https://lms.mercatorum.multiversity.click/assets/logo-f9ea1ffe.svg",/*"https://mercatorum.multiversity.click/main/img/logo5.png",*/ "https://www.unimercatorum.it/"],
-};
 
 // ── Animation variants ───────────────────────────────────────────────────────
 
@@ -131,14 +130,14 @@ function ExperienceCard({
           <span className="flex items-center gap-1.5">
             {orgIcon && (
               <a target="_blank" href={orgIcon[1]}>
-              <img
-                src={orgIcon[0]}
-                alt={org}
-                aria-hidden
-                width={120}
-                height={120}
-                className="shrink-0 object-contain"
-              />
+                <img
+                  src={orgIcon[0]}
+                  alt={org}
+                  aria-hidden
+                  width={120}
+                  height={120}
+                  className="shrink-0 object-contain"
+                />
               </a>
             )}
           </span>
