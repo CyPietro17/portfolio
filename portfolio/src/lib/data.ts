@@ -97,7 +97,7 @@ export const portfolioData = {
       role: "Software Developer",
       period: "Marzo 2023 - Presente",
       description: [
-        "Consulenaza per Wolters Kluwer sul prodotto CCH Tagetik",
+        "Consulenza per Wolters Kluwer sul prodotto CCH Tagetik",
         "Academy su Sviluppo backend Java/Spring Framework",
         "Academy su Sviluppo frontend Angular",
       ],
@@ -107,7 +107,7 @@ export const portfolioData = {
     {
       degree: "Laurea Triennale in Ingegneria Informatica",
       institution: "Universitas Mercatorum",
-      period: "2021 – 2024",
+      period: "2021 - 2024",
       vote: "103/110",
       courses: [
         "Ingegneria del Software",
@@ -153,35 +153,53 @@ export const portfolioData = {
   contact: Contact;
 };
 
-// SimpleIcons CDN slug for each skill (https://cdn.simpleicons.org/{slug})
+// SimpleIcons CDN slug for each skill
 export const TECH_ICONS: Record<string, string> = {
   // Linguaggi
-  Java: "logos:java",
-  "C#": "logos:c-sharp",
-  TypeScript: "logos:typescript-icon",
-  Javascript: "logos:javascript",
-  Python: "logos:python",
-  SQL: "devicon:sqldeveloper",
-  "Shell Script": "logos:bash-icon",
+  "Java":                   "logos:java",
+  "C#":                     "logos:c-sharp",
+  "TypeScript":             "logos:typescript-icon",
+  "Javascript":             "logos:javascript",
+  "Python":                 "logos:python",
+  "SQL":                    "devicon:sqldeveloper",
+  "Shell Script":           "logos:bash-icon",
   // Framework & Tools
-  "Spring Framework": "logos:spring-icon",
-  Maven: "devicon:maven",
-  Hibernate: "devicon:hibernate",
-  JUnit: "devicon:junit",
-  Docker: "logos:docker-icon",
-  Git: "logos:git-icon",
-  Svn: "simple-icons:subversion",
-  "Robot Framework": "simple-icons:robotframework",
-  Angular: "logos:angular-icon",
-  NPM: "logos:npm",
-  Jenkins: "logos:jenkins",
-  Jira: "logos:jira",
-  Cucumber: "logos:cucumber",
-  Swagger: "devicon:swagger",
-  JBoss: "devicon:redhat",
+  "Spring Framework":       "logos:spring-icon",
+  "Maven":                  "devicon:maven",
+  "Hibernate":              "devicon:hibernate",
+  "JUnit":                  "devicon:junit",
+  "Docker":                 "logos:docker-icon",
+  "Git":                    "logos:git-icon",
+  "Svn":                    "simple-icons:subversion",
+  "Robot Framework":        "simple-icons:robotframework",
+  "Angular":                "logos:angular-icon",
+  "NPM":                    "logos:npm",
+  "Jenkins":                "logos:jenkins",
+  "Jira":                   "logos:jira",
+  "Cucumber":               "logos:cucumber",
+  "Swagger":                "devicon:swagger",
+  "JBoss":                  "devicon:redhat",
   // Metodologie
-  "Agile/Scrum": "material-symbols:sprint",
-  "CI/CD": "carbon:continuous-deployment",
-  TDD: "carbon:test-tool",
-  BDD: "carbon:development",
+  "Agile/Scrum":            "material-symbols:sprint",
+  "CI/CD":                  "carbon:continuous-deployment",
+  "TDD":                    "carbon:test-tool",
+  "BDD":                    "carbon:development",
+};
+
+// Key: company name
+// Value: [logo, website url]
+// Other ITSvil logo:                 https://www.itsvil.it/assets/images/logo-itsvil-2026-white.png-419x139.png
+// Other Wolters Kluwer logo:         https://cdn.wolterskluwer.io/wk/jumpstart-v3-assets/0.x.x/logo/large.svg
+// Other Universitas Mercatorum logo: https://mercatorum.multiversity.click/main/img/logo5.png
+export const EXPERIENCE_ICONS: Record<string, string[]> = {
+  "I.T.Svil":
+    ["https://www.itsvil.it/assets/images/logo-itsvil-2022-r2.svg", "https://www.itsvil.it/"],
+  "Wolters Kluwer":
+    ["https://cdn.wolterskluwer.io/wk/fundamentals/1.x.x/logo/assets/white-medium.svg", "https://www.wolterskluwer.com/it-it"],
+  "Universitas Mercatorum":
+    ["https://lms.mercatorum.multiversity.click/assets/logo-f9ea1ffe.svg", "https://www.unimercatorum.it/"],
+};
+
+export const PROJECT_ICONS: Record<string, string> = {
+  "MediCuore": "https://www.svgrepo.com/show/409951/heart-beat.svg",
 };

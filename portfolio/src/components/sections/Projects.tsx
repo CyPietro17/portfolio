@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { ImageIcon, ExternalLinkIcon } from "lucide-react";
+import { ExternalLinkIcon } from "lucide-react";
 import { motion, type Variants } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
-import { portfolioData, type Project, TECH_ICONS } from "@/lib/data";
+import { TECH_ICONS, PROJECT_ICONS, portfolioData, type Project } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,10 +14,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
-const PROJECT_ICONS: Record<string, string> = {
-  "MediCuore": "https://www.svgrepo.com/show/409951/heart-beat.svg",
-};
 
 // ── Animation variants ──────────────────────────────────────────────────────
 
