@@ -32,6 +32,9 @@ export interface Contact {
   whatsapp: string;
 }
 
+const EMAIL_ADDRESS = "pietro.salvatore95@protonmail.com";
+const PHONE_NUMBER = "+393894361538";
+
 export const portfolioData = {
   name: "Pietro Salvatore",
   role: "Software Developer",
@@ -135,9 +138,9 @@ export const portfolioData = {
     },
   ],
   contact: {
-    email: "pietro.salvatore95@protonmail.com",
+    email: EMAIL_ADDRESS,
     linkedin: "https://www.linkedin.com/in/pietro-salvatore-a94ab4243/",
-    whatsapp: "393894361538",
+    whatsapp: PHONE_NUMBER,
   },
 } as const satisfies {
   name: string;

@@ -43,13 +43,13 @@
 @layer base {
   :root {
     scroll-behavior: smooth;
-    --background: oklch(0.29 0.02 277.54);
-  /*  --background: oklch(0.147 0.034 240);*/     /*Dark Blue*/
-  /*  --background: oklch(0.228 0.038 282.9);*/   /*Deep Navy*/
-  /*  --background: oklch(0.178 0.013 270.6);*/   /*Midnight Black*/
-  /*  --background: oklch(0.176 0.014 258.4);*/   /*Github Dark*/
-  /*  --background: oklch(0.216 0.006 56.0);*/    /*Warm Obsidian*/
-  /*  --background: oklch(0.186 0.022 292.4);*/   /*Dark Indigo*/
+    --background: oklch(0.29 0.02 277.54);      /* Dark Grey      */
+  /*  --background: oklch(0.147 0.034 240);*/     /* Dark Blue      */
+  /*  --background: oklch(0.228 0.038 282.9);*/   /* Deep Navy      */
+  /*  --background: oklch(0.178 0.013 270.6);*/   /* Midnight Black */
+  /*  --background: oklch(0.176 0.014 258.4);*/   /* Github Dark    */
+  /*  --background: oklch(0.216 0.006 56.0);*/    /* Warm Obsidian  */
+  /*  --background: oklch(0.186 0.022 292.4);*/   /* Dark Indigo    */
   /*  --foreground: oklch(96.42% 0.000 0);*/
     --foreground: oklch(0.8 0 0);
   /*  --card: oklch(0.29 0.02 277.54);*/
