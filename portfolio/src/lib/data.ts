@@ -72,7 +72,7 @@ export const portfolioData = {
         "JBoss",
       ],
     },
-    { category: "Metodologie", items: ["Agile/Scrum", "CI/CD", "TDD", "BDD"] },
+    { category: "Metodologie", items: ["Agile/Scrum", "CI/CD", "TDD", "BDD", "SDD"] },
   ],
   experience: [
     {
@@ -184,6 +184,7 @@ export const TECH_ICONS: Record<string, string> = {
   "CI/CD":                  "carbon:continuous-deployment",
   "TDD":                    "carbon:test-tool",
   "BDD":                    "carbon:development",
+  "SDD":                    "carbon/document-tasks",
 };
 
 // Key: company name
